@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-react-quality",
+  "version": "0.1.0",
+  "description": "ESLint rules for React code quality: redundant conditionals, effect cleanup, memory leaks and insecure token storage",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./html-formatter": "./src/formatters/html.js"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0"
+  },
+  "bin": {
+    "react-quality-report": "bin/react-quality-report.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md"
+  ]
+}
